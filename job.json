@@ -37,7 +37,7 @@
             "role": "Full Stack Engineer",
             "company": "Isabel",
             "website": "https://www.isabelgroup.com",
-            "logo": "/images/isabel.svg",
+            "logo": "images/isabel.svg",
             "description": "Led web development projects supporting Isabel Group’s digital and marketing strategies. Collaborated closely with cross-functional teams including Designers, DevOps, SecOps, and Product Owners to ensure high-performance, secure, and user-centric solutions. Independently delivered scalable websites and applications integrated with Content Management Systems, Customer Relationship Management platforms, and third-party APIs. Oversaw deployments and content-rich platforms focused on financial and accounting services, consistently aligning with stakeholder goals and industry compliance standards.",
             "responsibilities": [
                 "Expert in PHP frameworks (Wordpress, Laravel), with strong proficiency in JavaScript libraries for front-end development (Vue and React as SPA).",
@@ -65,7 +65,7 @@
             "role": "Full Stack Developer",
             "company": "Higher Education Marketing",
             "website": "https://www.higher-education-marketing.com/",
-            "logo": "/images/hem.svg",
+            "logo": "images/hem.svg",
             "description": "Intermediate Full Stack Developer specialised in Content Management Systems and Customer Relationship Management platforms development, integration, and management for a company dedicated to recruiting international and local students for universities, colleges, and English language schools across Canada.",
             "responsibilities": [
                 "Develop and manage websites for diverse clients, including universities, colleges, language schools, and business partners, as well as oversee the company’s own website.",
@@ -147,7 +147,7 @@
             "role": "WEB DEVELOPER",
             "company": "ICFF",
             "website": "https://icff.ca/",
-            "logo": "/images/icff.svg",
+            "logo": "images/icff.svg",
             "description": "Web Development Apprentice at the Italian Contemporary Film Festival (ICFF) in Toronto, supporting the festival’s digital presence and operations.",
             "responsibilities": [
                 "Provided website maintenance and updates for key festival platforms, including the main ICFF website and the L'Altra Italia blog.",
@@ -185,11 +185,11 @@
             "school": "Università degli studi di Cagliari",
             "description": "",
             "website": "https://www.unica.it/it",
-            "logo": "/images/unica.svg"
+            "logo": "images/unica.svg"
         }
     ],
     "summary": {
-        "image": "/images/profile.jpg",
+        "image": "images/profile.jpg",
         "email": "marco@tech-paw.com",
         "name": "Marco Maffei",
         "job": "Senior Full-Stack Developer",
@@ -229,21 +229,21 @@
             "title": "Adobe InDesign Certificate",
             "issuer": "Adobe Training Toronto",
             "date": "April 2018",
-            "details":""
+            "details": ""
         },
         {
             "institute": "georgian",
             "title": "Lassosoft Web Development Award",
             "issuer": "Georgian College",
             "date": "April 2015",
-            "details":""
+            "details": ""
         },
         {
             "institute": "georgian",
             "title": "Dean's List",
             "issuer": "Georgian College",
             "date": "Jan 2015 - Apr 2015",
-            "details":""
+            "details": ""
         },
         {
             "institute": "british-council",
@@ -280,7 +280,7 @@
             "website": "https://canadalearningcode.ca/",
             "logo": "https://www.canadalearningcode.ca/wp-content/uploads/clc-logo-1.svg",
             "city": "Barrie/Toronto, ON",
-            "country":"Canada",
+            "country": "Canada",
             "period": "April 2015 – April 2017",
             "activities": [
                 "Volunteered as a mentor for multiple workshops, guiding participants through web development fundamentals (HTML, CSS, JavaScript, PHP, WordPress).",
