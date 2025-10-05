@@ -21,19 +21,23 @@
             <div class="w-[90%] mx-auto grid md:grid-cols-2 gap-6 justify-items-center">
                 <div class="flex flex-col w-full">
                     <div class="flex">
-                        <img :src="summary.image" alt="Profile Picture" class="w-32 h-32 rounded-full object-cover mr-4">
+                        <img :src="summary.image" alt="Profile Picture"
+                            class="w-32 h-32 rounded-full object-cover mr-4">
                         <div>
                             <h1 class="text-3xl font-bold">{{ summary.name }}</h1>
                             <h2 class="text-lg font-semibold mt-2">{{ summary.job }}</h2>
                             <p class="text-base mt-2">{{ summary.address }}</p>
                             <div class="flex space-x-4 mt-4">
-                                <a :href="summary.social?.linkedin" target="_blank" class="text-blue-500 hover:text-blue-700">
+                                <a :href="summary.social?.linkedin" target="_blank"
+                                    class="text-blue-500 hover:text-blue-700">
                                     <i class="fab fa-linkedin fa-1x" aria-hidden="true"></i>
                                 </a>
-                                <a :href="summary.social?.github" target="_blank" class="text-gray-900 hover:text-fuchsia-900">
+                                <a :href="summary.social?.github" target="_blank"
+                                    class="text-gray-900 hover:text-fuchsia-900">
                                     <i class="fab fa-github fa-1x" aria-hidden="true"></i>
                                 </a>
-                                <a :href="summary.social?.twitter" target="_blank" class="text-sky-400 hover:text-sky-700">
+                                <a :href="summary.social?.twitter" target="_blank"
+                                    class="text-sky-400 hover:text-sky-700">
                                     <i class="fab fa-twitter fa-1x" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -42,10 +46,18 @@
                 </div>
                 <div class="flex flex-col space-y-1">
                     <h2 class="text-2xl font-bold pb-1">Contact</h2>
-                    <p><strong>Phone:</strong> 🇮🇹 <a :href="'tel:' + summary['phone-it']" class="text-[#4e2df3] hover:underline">{{ summary['phone-it'] }}</a> 🇧🇪 <a :href="'tel:' + summary['phone-be']" class="text-[#4e2df3] hover:underline">{{ summary['phone-be'] }}</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:marco@tech-paw.com" class="text-[#4e2df3] hover:underline">{{ summary.email }}</a></p>
-                    <p><strong>LinkedIn:</strong> <a :href="summary.social?.linkedin" target="_blank" rel="noopener noreferrer" class="text-[#4e2df3] hover:underline">{{ summary.social?.linkedin }}</a></p>
-                    <p><strong>Github:</strong> <a :href="summary.social?.github" target="_blank" rel="noopener noreferrer" class="text-[#4e2df3] hover:underline">{{ summary.social?.github }}</a></p>
+                    <p><strong>Phone:</strong> 🇮🇹 <a :href="'tel:' + summary['phone-it']"
+                            class="text-[#4e2df3] hover:underline">{{ summary['phone-it'] }}</a> 🇧🇪 <a
+                            :href="'tel:' + summary['phone-be']" class="text-[#4e2df3] hover:underline">{{
+                            summary['phone-be'] }}</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:marco@tech-paw.com"
+                            class="text-[#4e2df3] hover:underline">{{ summary.email }}</a></p>
+                    <p><strong>LinkedIn:</strong> <a :href="summary.social?.linkedin" target="_blank"
+                            rel="noopener noreferrer" class="text-[#4e2df3] hover:underline">{{ summary.social?.linkedin
+                            }}</a></p>
+                    <p><strong>Github:</strong> <a :href="summary.social?.github" target="_blank"
+                            rel="noopener noreferrer" class="text-[#4e2df3] hover:underline">{{ summary.social?.github
+                            }}</a></p>
                     </p>
                 </div>
             </div>
@@ -56,7 +68,11 @@
                 <div class="flex flex-col space-y-2">
                     <h2 class="text-2xl font-bold pb-2 border-b">Summary</h2>
                     <p>{{ summary.description }}</p>
-                     <p class="mt-4"><strong>Website -> </strong><a :href="summary.website" target="_blank" rel="noopener noreferrer" class="text-[#4e2df3] hover:underline"> {{summary.website}}</a> <strong>Portfolio -></strong> <a :href="summary.portfolio" target="_blank" rel="noopener noreferrer" class="text-[#4e2df3] hover:underline">{{summary.portfolio}}</a></p>
+                    <p class="mt-4"><strong>Website -> </strong><a :href="summary.website" target="_blank"
+                            rel="noopener noreferrer" class="text-[#4e2df3] hover:underline"> {{summary.website}}</a>
+                        <strong>Portfolio -></strong> <a :href="summary.portfolio" target="_blank"
+                            rel="noopener noreferrer" class="text-[#4e2df3] hover:underline">{{summary.portfolio}}</a>
+                    </p>
                 </div>
             </div>
         </section>
@@ -75,8 +91,7 @@
         <section id="experience" class="bg-white pb-6 pl-6 pr-6">
             <div class="w-[90%] mx-auto">
                 <h2 class="text-2xl font-bold text-gray-900 border-b pb-2 mb-4">Work Experience</h2>
-                <div v-for="job in workExperience" :key="job.company"
-                    class="job space-y-2">
+                <div v-for="job in workExperience" :key="job.company" class="job space-y-2">
                     <div class="flex justify-between items-center">
                         <h3 class="text-xl font-semibold text-gray-800">{{ job.role }} at {{ job.company }}</h3>
                         <div class="p-2 rounded h-20 flex items-center justify-center">
@@ -84,8 +99,8 @@
                         </div>
                     </div>
                     <p class="text-sm text-gray-600">{{ job.city }}, {{ job.country }} — {{ job.time }}</p>
-                    <p class="text-gray-700 text-sm"><a :href="job.website" class="italic text-[#4e2df3] hover:underline"
-                            target="_blank">{{ job.website }}</a></p>
+                    <p class="text-gray-700 text-sm"><a :href="job.website"
+                            class="italic text-[#4e2df3] hover:underline" target="_blank">{{ job.website }}</a></p>
                     <p class="text-gray-800 text-sm">{{ job.description }}</p>
                     <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700" v-if="job.responsibilities">
                         <li v-for="(resp, index) in job.responsibilities" :key="index">{{ resp }}</li>
@@ -154,7 +169,8 @@
                                 <strong>{{ entry.organization }}</strong>
                             </p>
                             <p class="text-[#4e2df3] hover:underline italic">
-                                <a :href="entry.website" target="_blank" rel="noopener noreferrer">{{ entry.website }}</a>
+                                <a :href="entry.website" target="_blank" rel="noopener noreferrer">{{ entry.website
+                                    }}</a>
                             </p>
                             <p class="text-sm text-gray-600">
                                 {{ entry.city }}, {{ entry.country }} | {{ entry.period }}
@@ -167,7 +183,7 @@
                 </div>
             </div>
         </section>
-          
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
     <script>
