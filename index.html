@@ -6,354 +6,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marco Maffei - CV</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body * {
             font-family: 'Nunito', sans-serif;
         }
     </style>
     <script src="https://kit.fontawesome.com/960a8c2498.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body class="text-gray-800 font-sans leading-relaxed selection:bg-purple-300">
-    <div id="app" data-v-app="">
+    <div id="app">
         <header class="p-6 pt-[0]">
             <div class="w-[90%] mx-auto grid md:grid-cols-2 gap-6 justify-items-center">
                 <div class="flex flex-col w-full">
-                    <div class="flex"><img alt="Profile Picture" class="w-32 h-32 rounded-full object-cover mr-4"
-                            src="images/profile.jpg">
+                    <div class="flex">
+                        <img :src="summary.image" alt="Profile Picture" class="w-32 h-32 rounded-full object-cover mr-4">
                         <div>
-                            <h1 class="text-3xl font-bold">Marco Maffei</h1>
-                            <h2 class="text-lg font-semibold mt-2">Senior Full-Stack Developer</h2>
-                            <p class="text-base mt-2">88 Avenue Albert, 1190 Forest, Bruxelles, Belgium</p>
-                            <div class="flex space-x-4 mt-4"><a target="_blank"
-                                    class="text-blue-500 hover:text-blue-700"
-                                    href="https://www.linkedin.com/in/marco-maffei-ninja-io/"><i
-                                        class="fab fa-linkedin fa-1x" aria-hidden="true"></i></a><a target="_blank"
-                                    class="text-gray-900 hover:text-fuchsia-900" href="https://github.com/orso081980"><i
-                                        class="fab fa-github fa-1x" aria-hidden="true"></i></a><a target="_blank"
-                                    class="text-sky-400 hover:text-sky-700" href="https://x.com/MarcoMaffei3"><i
-                                        class="fab fa-twitter fa-1x" aria-hidden="true"></i></a></div>
+                            <h1 class="text-3xl font-bold">{{ summary.name }}</h1>
+                            <h2 class="text-lg font-semibold mt-2">{{ summary.job }}</h2>
+                            <p class="text-base mt-2">{{ summary.address }}</p>
+                            <div class="flex space-x-4 mt-4">
+                                <a :href="summary.social?.linkedin" target="_blank" class="text-blue-500 hover:text-blue-700">
+                                    <i class="fab fa-linkedin fa-1x" aria-hidden="true"></i>
+                                </a>
+                                <a :href="summary.social?.github" target="_blank" class="text-gray-900 hover:text-fuchsia-900">
+                                    <i class="fab fa-github fa-1x" aria-hidden="true"></i>
+                                </a>
+                                <a :href="summary.social?.twitter" target="_blank" class="text-sky-400 hover:text-sky-700">
+                                    <i class="fab fa-twitter fa-1x" aria-hidden="true"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-col space-y-1">
                     <h2 class="text-2xl font-bold pb-1">Contact</h2>
-                    <p><strong>Phone:</strong> 🇮🇹 <a href="tel:+393926449095"
-                            class="text-[#4e2df3] hover:underline">+393926449095</a> 🇧🇪 <a href="tel:+32471553623"
-                            class="text-[#4e2df3] hover:underline">+32471553623</a></p>
-                    <p><strong>Email:</strong> <a href="mailto:marco@tech-paw.com"
-                            class="text-[#4e2df3] hover:underline">marco@tech-paw.com</a></p>
-                    <p><strong>LinkedIn:</strong> <a target="_blank" rel="noopener noreferrer"
-                            class="text-[#4e2df3] hover:underline"
-                            href="https://www.linkedin.com/in/marco-maffei-ninja-io/">https://www.linkedin.com/in/marco-maffei-ninja-io/</a>
+                    <p><strong>Phone:</strong> 🇮🇹 <a :href="'tel:' + summary['phone-it']" class="text-[#4e2df3] hover:underline">{{ summary['phone-it'] }}</a> 🇧🇪 <a :href="'tel:' + summary['phone-be']" class="text-[#4e2df3] hover:underline">{{ summary['phone-be'] }}</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:marco@tech-paw.com" class="text-[#4e2df3] hover:underline">{{ summary.email }}</a></p>
+                    <p><strong>LinkedIn:</strong> <a :href="summary.social?.linkedin" target="_blank" rel="noopener noreferrer" class="text-[#4e2df3] hover:underline">{{ summary.social?.linkedin }}</a></p>
+                    <p><strong>Github:</strong> <a :href="summary.social?.github" target="_blank" rel="noopener noreferrer" class="text-[#4e2df3] hover:underline">{{ summary.social?.github }}</a></p>
                     </p>
-                    <p><strong>Github:</strong> <a target="_blank" rel="noopener noreferrer"
-                            class="text-[#4e2df3] hover:underline"
-                            href="https://github.com/orso081980">https://github.com/orso081980</a></p>
-                    <p></p>
                 </div>
             </div>
         </header>
+
         <section id="summary" class="pb-6 pl-6 pr-6">
             <div class="w-[90%] mx-auto grid gap-6 items-center justify-items-center">
                 <div class="flex flex-col space-y-2">
                     <h2 class="text-2xl font-bold pb-2 border-b">Summary</h2>
-                    <p>Experienced Full-Stack Developer (active since 2016) and Founder/CEO (Tech Paw, 2023) with a
-                        proven track record in building, maintaining, and scaling robust digital solutions driving
-                        business growth. Expertise spans PHP (Laravel, Symfony, WordPress), JavaScript (Vue, React,
-                        Node.js, Nuxt.js), Python, SQL/NoSQL databases (MySQL, MongoDB), and cloud platforms (AWS, GCP).
-                        Skilled in designing and implementing complex REST/SOAP APIs, integrating diverse Customer
-                        Relationship Management systems (HubSpot, Dynamics), and optimizing workflows using Git/GitLab,
-                        Jira, and Monday.com. Progressed from internal team member to trusted external consultant at
-                        Isabel Group, Belgium’s leading FinTech, over a 4.5-year collaboration. Passionate about
-                        architecting scalable, secure systems, leveraging data for informed decisions, and leading
-                        technical projects to successful completion, achieving measurable improvements in efficiency and
-                        user experience. Specialized in architecting scalable and secure systems, leading
-                        cross-functional technical projects, and leveraging data to drive measurable improvements in
-                        performance, efficiency, and user experience.</p>
-                    <p class="mt-4"><strong>Website -&gt; </strong><a target="_blank" rel="noopener noreferrer"
-                            class="text-[#4e2df3] hover:underline"
-                            href="https://www.tech-paw.com">https://www.tech-paw.com</a> <strong>Portfolio
-                            -&gt;</strong> <a target="_blank" rel="noopener noreferrer"
-                            class="text-[#4e2df3] hover:underline"
-                            href="https://www.tech-paw.com/about-me/#projects">https://www.tech-paw.com/about-me/#projects</a>
-                    </p>
+                    <p>{{ summary.description }}</p>
+                     <p class="mt-4"><strong>Website -> </strong><a :href="summary.website" target="_blank" rel="noopener noreferrer" class="text-[#4e2df3] hover:underline"> {{summary.website}}</a> <strong>Portfolio -></strong> <a :href="summary.portfolio" target="_blank" rel="noopener noreferrer" class="text-[#4e2df3] hover:underline">{{summary.portfolio}}</a></p>
                 </div>
             </div>
         </section>
+
         <section id="skills" class="pb-6 pl-6 pr-6">
             <div class="w-[90%] mx-auto">
                 <h2 class="text-2xl font-bold border-b pb-2 mb-4">Skills</h2>
                 <ul class="list-disc pl-5 space-y-2">
-                    <li><strong>Programming Languages:</strong> PHP, JavaScript (ES6), Python, Typescript</li>
-                    <li><strong>Stack:</strong> LAMP, JAM, MEVN, MERN</li>
-                    <li><strong>Back-end (PHP):</strong> Laravel, Symfony, CodeIgniter</li>
-                    <li><strong>Back-end (JS):</strong> Node.js, Express.js, Nuxt.js, Next.js</li>
-                    <li><strong>Front-end:</strong> Vue.js, React.js, Angular.js, jQuery, Blade, Twig</li>
-                    <li><strong>Databases:</strong> MySQL, MongoDB, PostgreSQL, SQLite</li>
-                    <li><strong>Web Servers:</strong> Apache, Nginx</li>
-                    <li><strong>Content Management Systems:</strong> , WordPress (Themes/Plugin/Core), Drupal,
-                        ExpressionEngine, DatoCMS, Strapi.js, October CMS, Django</li>
-                    <li><strong>Customer Relationship Management platforms:</strong> HubSpot (API/Admin), Mautic,
-                        Microsoft Dynamics 365</li>
-                    <li><strong>Cloud/DevOps:</strong> AWS (EC2, S3, Cloudfront), GCP, Linux (Apache/Nginx), Git/GitLab,
-                        Docker, Shared Hosting, VPS, SSH, s(FTP)</li>
-                    <li><strong>Tools &amp; APIs:</strong> Webpack, Vite, Grunt, Jira, Monday.com, Slack, Google
-                        Analytics, Matomo, REST, SOAP, JSON, XML, AJAX</li>
-                    <li><strong>Concepts:</strong> Object-Oriented Programming, Functional Programming, MVC
-                        Architecture, API, Scalable System Design</li>
-                    <li><strong>UI/Layout:</strong> Adobe, Figma, Bootstrap, Tailwind, Responsive Design, SCSS/CSS</li>
-                    <li><strong>Markup:</strong> HTML, Markdown</li>
+                    <li v-for="(value, key) in skills" :key="key">
+                        <strong>{{ key }}:</strong> {{ value }}
+                    </li>
                 </ul>
             </div>
         </section>
+
         <section id="experience" class="bg-white pb-6 pl-6 pr-6">
             <div class="w-[90%] mx-auto">
                 <h2 class="text-2xl font-bold text-gray-900 border-b pb-2 mb-4">Work Experience</h2>
-                <div class="job space-y-2">
+                <div v-for="job in workExperience" :key="job.company"
+                    class="job space-y-2">
                     <div class="flex justify-between items-center">
-                        <h3 class="text-xl font-semibold text-gray-800">Full Stack Developer &amp; CEO at Tech Paw</h3>
-                        <div class="p-2 rounded h-20 flex items-center justify-center"><img
-                                src="https://techpawdev-gpcx6wyews.live-website.com/wp-content/themes/isabeltheme/assets/svgs/tech-paw-purple-2.svg"
-                                alt="Tech Paw" class="w-40"></div>
+                        <h3 class="text-xl font-semibold text-gray-800">{{ job.role }} at {{ job.company }}</h3>
+                        <div class="p-2 rounded h-20 flex items-center justify-center">
+                            <img :src="job.logo" :alt="job.company" class="w-40" />
+                        </div>
                     </div>
-                    <p class="text-sm text-gray-600">Bruxelles, Belgium — 06-2023 - Current</p>
-                    <p class="text-gray-700 text-sm"><a href="https://www.tech-paw.com"
-                            class="italic text-[#4e2df3] hover:underline" target="_blank">https://www.tech-paw.com</a>
-                    </p>
-                    <p class="text-gray-800 text-sm">Founded Tech Paw SRL in 2023 to deliver full stack development and
-                        strategic consulting services across Europe. Acting as both developer and technical advisor,
-                        independently building scalable Content Management System, Customer relationship management
-                        platforms, and web platforms tailored to client needs. Businesses advisor on infrastructure
-                        optimization, deployment automation, and cross-platform integration. Ensured delivery excellence
-                        by developing reusable components, creating technical documentation, and mentoring teams on
-                        implementation best practices.</p>
-                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
-                        <li>Independently develop and deploy client-facing web apps using different platforms leveraging
-                            modern PHP, Javascript and Python frameworks, enhancing clients' web presence across
-                            multiple aspects including SEO, UX/UI design, performance, security, and modernization.</li>
-                        <li>Provide strategic direction on selecting optimal hosting environments based on scalability,
-                            performance, and budget.</li>
-                        <li>Facilitate clear communication with clients, stakeholders, and product owners to align
-                            development efforts with business goals.</li>
-                        <li>Collaborate with designers to ensure UI/UX guidelines are effectively implemented in the
-                            application’s functionality.</li>
-                        <li>Manage project budgets efficiently to maximize return on investment and resource allocation.
-                        </li>
-                        <li>Establish and maintain rational project timelines to ensure on-time delivery and scope
-                            control.</li>
-                    </ul>
-                </div>
-                <div class="job space-y-2">
-                    <div class="flex justify-between items-center">
-                        <h3 class="text-xl font-semibold text-gray-800">Full Stack Engineer at Isabel</h3>
-                        <div class="p-2 rounded h-20 flex items-center justify-center"><img src="images/isabel.svg"
-                                alt="Isabel" class="w-40"></div>
-                    </div>
-                    <p class="text-sm text-gray-600">Bruxelles, Belgium — 08-2020 - 01-2025</p>
-                    <p class="text-gray-700 text-sm"><a href="https://www.isabelgroup.com"
-                            class="italic text-[#4e2df3] hover:underline"
-                            target="_blank">https://www.isabelgroup.com</a></p>
-                    <p class="text-gray-800 text-sm">Led web development projects supporting Isabel Group’s digital and
-                        marketing strategies. Collaborated closely with cross-functional teams including Designers,
-                        DevOps, SecOps, and Product Owners to ensure high-performance, secure, and user-centric
-                        solutions. Independently delivered scalable websites and applications integrated with Content
-                        Management Systems, Customer Relationship Management platforms, and third-party APIs. Oversaw
-                        deployments and content-rich platforms focused on financial and accounting services,
-                        consistently aligning with stakeholder goals and industry compliance standards.</p>
-                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
-                        <li>Expert in PHP frameworks (Wordpress, Laravel), with strong proficiency in JavaScript
-                            libraries for front-end development (Vue and React as SPA).</li>
-                        <li>Skilled in designing and implementing RESTful APIs, ensuring efficient system communication
-                            and data exchange.</li>
-                        <li>Experienced in customizing CMS platforms (WordPress, Drupal), CRMs systems for enhanced
-                            functionality (Hubpost, Microsoft Dynamics) and analytics tools (google analytics and
-                            matomo).</li>
-                        <li>Proficient in SQL and NoSQL databases, including MongoDB and MySQL, enabling robust data
-                            handling and optimization.</li>
-                        <li>Proficient in tools such as Jira, Monday and Slack for efficient task and project
-                            management.</li>
-                    </ul>
-                </div>
-                <div class="job space-y-2">
-                    <div class="flex justify-between items-center">
-                        <h3 class="text-xl font-semibold text-gray-800">Full Stack Developer at Higher Education
-                            Marketing</h3>
-                        <div class="p-2 rounded h-20 flex items-center justify-center"><img src="images/hem.svg"
-                                alt="Higher Education Marketing" class="w-40"></div>
-                    </div>
-                    <p class="text-sm text-gray-600">Montreal, Quebec, Canada — 10-2018 - 09-2019</p>
-                    <p class="text-gray-700 text-sm"><a href="https://www.higher-education-marketing.com/"
-                            class="italic text-[#4e2df3] hover:underline"
-                            target="_blank">https://www.higher-education-marketing.com/</a></p>
-                    <p class="text-gray-800 text-sm">Intermediate Full Stack Developer specialised in Content Management
-                        Systems and Customer Relationship Management platforms development, integration, and management
-                        for a company dedicated to recruiting international and local students for universities,
-                        colleges, and English language schools across Canada.</p>
-                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
-                        <li>Develop and manage websites for diverse clients, including universities, colleges, language
-                            schools, and business partners, as well as oversee the company’s own website.</li>
-                        <li>Utilize platforms such as WordPress and landing pages to deliver customized,
-                            high-performance web solutions.</li>
-                        <li>Configure, manage, and integrate Customer Relationship Management platforms (HubSpot,
-                            Mautic, Campus Login, Nova) and their APIs to support effective client interaction and data
-                            management.</li>
-                        <li>Design custom themes and plugins to enhance website performance and streamline client
-                            interactions.</li>
-                        <li>Coordinate project tracking with teams and clients, establishing protocols to optimize
-                            collaboration and project outcomes.</li>
-                    </ul>
-                </div>
-                <div class="job space-y-2">
-                    <div class="flex justify-between items-center">
-                        <h3 class="text-xl font-semibold text-gray-800">Full Stack Developer at Oliver’s Learning
-                            (Oliver Solutions)</h3>
-                        <div class="p-2 rounded h-20 flex items-center justify-center"><img
-                                src="https://techpawdev-gpcx6wyews.live-website.com/wp-content/themes/isabeltheme/assets/svgs/oliver.svg"
-                                alt="Oliver’s Learning (Oliver Solutions)" class="w-40"></div>
-                    </div>
-                    <p class="text-sm text-gray-600">Toronto, Ontario, Canada — 01-2018 - 06-2018</p>
-                    <p class="text-gray-700 text-sm"><a href="https://www.oliverslearning.com/"
-                            class="italic text-[#4e2df3] hover:underline"
-                            target="_blank">https://www.oliverslearning.com/</a></p>
-                    <p class="text-gray-800 text-sm">Full Stack Developer responsible for the development and
-                        maintenance of a multi-site learning platform at Oliver Solutions, a premier Canadian provider
-                        of regulator-approved education and exam preparation for financial professionals.</p>
-                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
-                        <li>Maintaining and enhancing a multi-site web portal built on ExpressionEngine, ensuring
-                            consistent and seamless user experiences across multiple domains.</li>
-                        <li>Managing front-end and back-end processes for clients and administrators, improving
-                            usability and system performance.</li>
-                        <li>Developing custom plugins, modules, and add-ons using PHP, JavaScript, and MySQL, utilizing
-                            frameworks like CodeIgniter or Laravel to extend platform functionality.</li>
-                        <li>Implementing the MVC design pattern to create clean, modular, and scalable code
-                            architecture.</li>
-                        <li>Creating and optimizing front-end templates to deliver engaging and interactive user
-                            interfaces.</li>
-                    </ul>
-                </div>
-                <div class="job space-y-2">
-                    <div class="flex justify-between items-center">
-                        <h3 class="text-xl font-semibold text-gray-800">Full Stack Developer at Larche Digital</h3>
-                        <div class="p-2 rounded h-20 flex items-center justify-center"><img
-                                src="https://techpawdev-gpcx6wyews.live-website.com/wp-content/themes/isabeltheme/assets/svgs/larche.svg"
-                                alt="Larche Digital" class="w-40"></div>
-                    </div>
-                    <p class="text-sm text-gray-600">Barrie, Ontario, Canada — 04-2016 - 01-2018</p>
-                    <p class="text-gray-700 text-sm"><a href="https://larche.com/"
-                            class="italic text-[#4e2df3] hover:underline" target="_blank">https://larche.com/</a></p>
-                    <p class="text-gray-800 text-sm">Independent Junior Web Developer for a digital agency in Barrie
-                        specializing in advertising, design, marketing, and web solutions, recognized for managing
-                        popular radio portals across Canada.</p>
-                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
-                        <li>Coordinating website timing, setup, and launches in WordPress environments across various
-                            hosting types, including shared hosting, cloud, and VPS.</li>
-                        <li>Developing custom WordPress solutions from scratch or through customization, covering
-                            themes, layouts, plugins, APIs, and database queries.</li>
-                        <li>Providing ongoing maintenance, including debugging and optimization for high-profile radio
-                            websites like 104.1 The Dock, 92.3 The Dock, Kicx 91.7, and Kicx 106.</li>
-                        <li>Implementing Google Analytics, Google Console, and social media analytics (Facebook,
-                            Twitter, Instagram) for comprehensive site tracking and SEO enhancement.</li>
-                        <li>Performing essential maintenance tasks, including migrations, backups, security
-                            enhancements, and user authentication.</li>
-                    </ul>
-                </div>
-                <div class="job space-y-2">
-                    <div class="flex justify-between items-center">
-                        <h3 class="text-xl font-semibold text-gray-800">WEB DEVELOPER at ICFF</h3>
-                        <div class="p-2 rounded h-20 flex items-center justify-center"><img src="images/icff.svg"
-                                alt="ICFF" class="w-40"></div>
-                    </div>
-                    <p class="text-sm text-gray-600">Toronto, Ontario, Canada — 09-2015 - 01-2016</p>
-                    <p class="text-gray-700 text-sm"><a href="https://icff.ca/"
-                            class="italic text-[#4e2df3] hover:underline" target="_blank">https://icff.ca/</a></p>
-                    <p class="text-gray-800 text-sm">Web Development Apprentice at the Italian Contemporary Film
-                        Festival (ICFF) in Toronto, supporting the festival’s digital presence and operations.</p>
-                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700">
-                        <li>Provided website maintenance and updates for key festival platforms, including the main ICFF
-                            website and the L'Altra Italia blog.</li>
-                        <li>Ensured smooth operation of front-end interfaces, making updates to improve user experience
-                            and keep content relevant for festival audiences.</li>
+                    <p class="text-sm text-gray-600">{{ job.city }}, {{ job.country }} — {{ job.time }}</p>
+                    <p class="text-gray-700 text-sm"><a :href="job.website" class="italic text-[#4e2df3] hover:underline"
+                            target="_blank">{{ job.website }}</a></p>
+                    <p class="text-gray-800 text-sm">{{ job.description }}</p>
+                    <ul class="list-disc pl-5 space-y-1 text-sm text-gray-700" v-if="job.responsibilities">
+                        <li v-for="(resp, index) in job.responsibilities" :key="index">{{ resp }}</li>
                     </ul>
                 </div>
             </div>
         </section>
+
         <section id="education" class="bg-white p-6">
             <div class="w-[90%] mx-auto">
                 <h2 class="text-2xl font-bold text-gray-900 border-b pb-2 mb-4">Education</h2>
-                <div class="flex items-start gap-4 bg-gray-50 rounded-lg p-4 mb-6 items-center"><img
-                        src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Georgian_College_logo.svg" alt="Logo"
-                        class="w-20 h-20 object-contain p-2 rounded">
+                <div v-for="edu in education" :key="edu.institute"
+                    class="flex items-start gap-4 bg-gray-50 rounded-lg p-4 mb-6 items-center">
+                    <img v-if="edu.logo" :src="edu.logo" alt="Logo" class="w-20 h-20 object-contain p-2 rounded" />
                     <div class="flex-1 pl-10">
-                        <h3 class="text-xl font-semibold text-gray-800">Computer Programming and Analysis</h3>
-                        <p class="text-gray-700"><strong><a href="https://www.georgiancollege.ca/" target="_blank"
-                                    rel="noopener noreferrer" class="text-[#5C6BC0] italic hover:underline">Georgian
-                                    College (Laurentian University)</a></strong></p>
-                        <p class="text-sm text-gray-600">Barrie, Ontario Canada | 09-2013 - 03-2016</p><!--v-if-->
-                    </div>
-                </div>
-                <div class="flex items-start gap-4 bg-gray-50 rounded-lg p-4 mb-6 items-center"><img
-                        src="images/unica.svg" alt="Logo" class="w-20 h-20 object-contain p-2 rounded">
-                    <div class="flex-1 pl-10">
-                        <h3 class="text-xl font-semibold text-gray-800">Bachelor of Law</h3>
-                        <p class="text-gray-700"><strong><a href="https://www.unica.it/it" target="_blank"
-                                    rel="noopener noreferrer" class="text-[#5C6BC0] italic hover:underline">Università
-                                    degli studi di Cagliari</a></strong></p>
-                        <p class="text-sm text-gray-600">Cagliari, Sardegna Italy | 09-2001 - 05-2009</p><!--v-if-->
+                        <h3 class="text-xl font-semibold text-gray-800">{{ edu.degree }}</h3>
+                        <p class="text-gray-700">
+                            <strong>
+                                <a v-if="edu.website" :href="edu.website" target="_blank" rel="noopener noreferrer"
+                                    class="text-[#5C6BC0] italic hover:underline">
+                                    {{ edu.school }}
+                                </a>
+                                <span v-else>{{ edu.school }}</span>
+                            </strong>
+                        </p>
+                        <p class="text-sm text-gray-600">{{ edu.city }} {{ edu.country }} | {{ edu.time }}</p>
+                        <p v-if="edu.description" class="text-sm text-gray-600 mt-2">{{ edu.description }}</p>
                     </div>
                 </div>
             </div>
         </section>
+
         <section id="awards" class="bg-white pb-6 pl-6 pr-6">
             <div class="w-[90%] mx-auto">
-                <h2 class="text-2xl font-bold text-gray-900 border-b pb-2 mb-4">Awards &amp; Certifications</h2>
+                <h2 class="text-2xl font-bold text-gray-900 border-b pb-2 mb-4">Awards & Certifications</h2>
                 <ul class="list-disc pl-5 space-y-2">
-                    <li>Adobe InDesign Certificate <span> - Adobe Training Toronto</span><span> (April 2018)</span></li>
-                    <li>Lassosoft Web Development Award <span> - Georgian College</span><span> (April 2015)</span></li>
-                    <li>Dean's List <span> - Georgian College</span><span> (Jan 2015 - Apr 2015)</span></li>
-                    <li>IELTS <span> - British Council</span><span> (Dec 2018)</span></li>
+                    <li v-for="award in awards" :key="award.title">
+                        {{ award.title }}
+                        <span v-if="award.issuer"> - {{ award.issuer }}</span>
+                        <span v-if="award.date"> ({{ award.date }})</span>
+                    </li>
                 </ul>
             </div>
         </section>
+
         <section id="languages" class="bg-white pb-6 pl-6 pr-6">
             <div class="w-[90%] mx-auto">
                 <h2 class="text-2xl font-bold text-gray-900 border-b pb-2 mb-4">Languages</h2>
                 <ul class="list-disc pl-5 space-y-2">
-                    <li><strong>Italian:</strong> Native (C2)</li>
-                    <li><strong>English:</strong> Fluent (C1)</li>
-                    <li><strong>French:</strong> Beginner (A2)</li>
-                    <li><strong>Dutch:</strong> Basic (A1)</li>
+                    <li v-for="lang in languages" :key="lang.language">
+                        <strong>{{ lang.language }}:</strong> {{ lang.proficiency }}
+                    </li>
                 </ul>
             </div>
         </section>
+
         <section id="community" class="bg-white pb-6 pl-6 pr-6">
             <div class="w-[90%] mx-auto">
                 <h2 class="text-2xl font-bold text-gray-900 border-b pb-2 mb-4">Community Involvement</h2>
-                <div class="community-entry mb-6">
-                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Mentor</h3>
-                    <div class="flex items-center gap-6 bg-gray-50 p-4 mb-6 rounded-lg"><img
-                            src="https://www.canadalearningcode.ca/wp-content/uploads/clc-logo-1.svg" alt="Logo"
-                            class="object-contain rounded">
+                <div v-for="entry in community" :key="entry.role + entry.organization" class="community-entry mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">{{ entry.role }}</h3>
+                    <div class="flex items-center gap-6 bg-gray-50 p-4 mb-6 rounded-lg">
+                        <img :src="entry.logo" alt="Logo" class="object-contain rounded" />
                         <div class="flex-1">
-                            <p class="text-gray-700"><strong>Canada Learning Code (formerly Ladies Learning
-                                    Code)</strong></p>
-                            <p class="text-[#4e2df3] hover:underline italic"><a href="https://canadalearningcode.ca/"
-                                    target="_blank" rel="noopener noreferrer">https://canadalearningcode.ca/</a></p>
-                            <p class="text-sm text-gray-600">Barrie/Toronto, ON, Canada | April 2015 – April 2017</p>
+                            <p class="text-gray-700">
+                                <strong>{{ entry.organization }}</strong>
+                            </p>
+                            <p class="text-[#4e2df3] hover:underline italic">
+                                <a :href="entry.website" target="_blank" rel="noopener noreferrer">{{ entry.website }}</a>
+                            </p>
+                            <p class="text-sm text-gray-600">
+                                {{ entry.city }}, {{ entry.country }} | {{ entry.period }}
+                            </p>
                         </div>
                     </div>
-                    <ul class="list-disc pl-5 space-y-2 mt-2">
-                        <li>Volunteered as a mentor for multiple workshops, guiding participants through web development
-                            fundamentals (HTML, CSS, JavaScript, PHP, WordPress).</li>
-                        <li>Assisted learners in building their first web projects, fostering an inclusive and
-                            supportive learning environment.</li>
+                    <ul v-if="entry.activities && entry.activities.length" class="list-disc pl-5 space-y-2 mt-2">
+                        <li v-for="(activity, index) in entry.activities" :key="index">{{ activity }}</li>
                     </ul>
                 </div>
             </div>
         </section>
+          
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    workExperience: [],
+                    skills: {},
+                    education: [],
+                    summary: {},
+                    awards: [],
+                    languages: [],
+                    community: []
+                };
+            },
+            mounted() {
+                fetch('../job.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        this.skills = data.skills || [];
+                        this.education = data.education || [];
+                        this.workExperience = data['Work Experience'] || [];
+                        this.summary = data.summary || this.summary;
+                        this.awards = data.Awards_and_Certifications || [];
+                        this.languages = data.Languages || [];
+                        this.community = data.Community_Involvement || [];
+                    })
+                    .catch(error => console.error('Error fetching the JSON:', error));
+            }
+        });
+
+        app.mount('#app');
+    </script>
 </body>
 
 </html>

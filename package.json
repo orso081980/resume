@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "generate:pdf": "node generate-pdf.js",
+    "generate:html": "node generate-html.js",
+    "generate:all": "npm run generate:pdf && npm run generate:html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "CV generator - Creates PDF and HTML versions from a template and JSON data",
   "dependencies": {
     "puppeteer": "^24.6.1"
   }
