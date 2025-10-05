@@ -200,7 +200,7 @@
                 };
             },
             mounted() {
-                fetch('../job.json')
+                fetch('job.json')
                     .then(response => response.json())
                     .then(data => {
                         this.skills = data.skills || [];
