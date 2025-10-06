@@ -1,0 +1,19 @@
+Dear Hiring Manager,
+
+My name is Marco Maffei, and I am a full-stack developer with 9 years of experience. 
+
+For the past four and a half years, I have been working as an external full-stack developer at Isabel Group, Belgium’s leading fintech company. In my role at Isabel, I have been the sole full-stack developer within a two-person web team, collaborating closely with a webmaster, DevOps, and SecOps teams to ensure the highest standards of performance, security, and reliability. I have been fully responsible for the development and maintenance of 19 web applications tied to the company’s marketing ecosystem, handling all coding and technical tasks.
+
+Our infrastructure is hosted on AWS and includes a variety of technologies such as WordPress, Node.js, Laravel-based custom PHP applications, and Jamstack solutions that consume REST APIs from external low-code platforms. 
+
+For front-end development and rendering, we employ modern JavaScript frameworks like React and Vue (and recently Next.js and Nuxt.js), along with templating engines and custom-built solutions.
+
+Additionally, I’ve been integrating diverse systems via REST APIs to streamline internal processes and enhance data accessibility. Recently, I’ve also expanded into Python development, focusing on automation solutions to support operational efficiency.
+
+I’m interested in applying for the [job-position] position currently available at [job-company] and believe that my extensive experience in both back-end and front-end development, combined with my collaborative mindset and problem-solving skills, could potentially make me a good match for the role.
+
+Please feel free to contact me if you have any questions or require further information, I’d be happy to discuss how I can contribute to your team.
+
+Kind Regards,
+
+Marco
