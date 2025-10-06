@@ -18,15 +18,17 @@
                 "Establish and maintain rational project timelines to ensure on-time delivery and scope control."
             ],
             "tech_stack": {
-                "Stack": "LAMP, JAM, MEVN, MERN",
-                "PHP": "Wordpress, Laravel, Drupal, Vanilla",
-                "JavaScript": "Vue.js, React.js, Node.js, Express.js, Next.js, Nuxt.js, Typescript, Stapi.js",
+                "Stack": "LAMP, JAM, MEVN, MERN, HEADLESS",
+                "PHP": "Wordpress, Laravel, Vanilla",
+                "JavaScript": "Vue.js, React.js, Node.js, Express.js, Next.js, Nuxt.js, Typescript, Stapi.js, jQuery",
                 "Python": "Flask, FastApi, Django, Vanilla",
                 "Databases": "MySQL, MongoDB, PostgreSQL, SQLite",
                 "Cloud": "AWS, GCP",
-                "Hosting": "Shared Hosting, VPS Management",
+                "Hosting": "Shared Hosting, VPS Management, Dedicate Hosting",
                 "Tools": "Git/GitLab, Docker (basics), Jira, Monday.com",
-                "Design": "Figma, Adobe, Boostrap, Tailwind, Vite, Responsive Design, SCSS"
+                "Design": "Figma, Adobe, Boostrap, Tailwind, Vite, Responsive Design, SCSS",
+                "Deployment": "Vercel, Render, Heroku, Railway",
+                "Platform": "Wordpress, Drupal, Hubspot, Nuxt Studio, Strapi.js, October CMS, DatoCMS, Django"
             },
             "key_skills": "9 years as a full stack developer with experience in managing web departments and leading projects."
         },
@@ -172,7 +174,7 @@
             "country": "Canada",
             "degree": "Computer Programming and Analysis",
             "school": "Georgian College (Laurentian University)",
-            "description": "",
+            "description": "Students learn to use current Web and Internet technologies to create innovative, interactive products for a variety of users, platforms, and devices. They develop skills and knowledge to plan, design, and develop engaging and intuitive Web applications. Students explore the use of current technologies including HTML, CSS, JavaScript, the Document Object Model (DOM), Application Programming Interfaces (APIs), and a variety of popular Web frameworks. With a focus on user-centered design, students apply human-computer interaction principles, standards-based technologies, and Web application best practices to create an accessible, usable, and captivating user experience.",
             "website": "https://www.georgiancollege.ca/",
             "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Georgian_College_logo.svg"
         },
@@ -208,8 +210,8 @@
         "description": "Experienced Full-Stack Developer (active since 2016) and Founder/CEO (Tech Paw, 2023) with a proven track record in building, maintaining, and scaling robust digital solutions driving business growth. Expertise spans PHP (Laravel, Symfony, WordPress), JavaScript (Vue, React, Node.js, Nuxt.js), Python, SQL/NoSQL databases (MySQL, MongoDB), and cloud platforms (AWS, GCP). Skilled in designing and implementing complex REST/SOAP APIs, integrating diverse Customer Relationship Management systems (HubSpot, Dynamics), and optimizing workflows using Git/GitLab, Jira, and Monday.com. Progressed from internal team member to trusted external consultant at Isabel Group, Belgium’s leading FinTech, over a 4.5-year collaboration. Passionate about architecting scalable, secure systems, leveraging data for informed decisions, and leading technical projects to successful completion, achieving measurable improvements in efficiency and user experience. Specialized in architecting scalable and secure systems, leading cross-functional technical projects, and leveraging data to drive measurable improvements in performance, efficiency, and user experience."
     },
     "skills": {
-        "Programming Languages": "PHP, JavaScript (ES6), Python, Typescript",
-        "Stack": "LAMP, JAM, MEVN, MERN",
+        "Programming Languages": "PHP, JavaScript, Python, Typescript",
+        "Stack": "LAMP, LEMP, JAM, MEVN, MERN, HEADLESS",
         "Back-end (PHP)": "Laravel, Symfony, CodeIgniter",
         "Back-end (JS)": "Node.js, Express.js, Nuxt.js, Next.js",
         "Front-end": "Vue.js, React.js, Angular.js, jQuery, Blade, Twig",
@@ -219,7 +221,7 @@
         "Customer Relationship Management platforms": "HubSpot (API/Admin), Mautic, Microsoft Dynamics 365",
         "Cloud/DevOps": "AWS (EC2, S3, Cloudfront), GCP, Linux (Apache/Nginx), Git/GitLab, Docker, Shared Hosting, VPS, SSH, s(FTP)",
         "Tools & APIs": "Webpack, Vite, Grunt, Jira, Monday.com, Slack, Google Analytics, Matomo, REST, SOAP, JSON, XML, AJAX",
-        "Concepts": "Object-Oriented Programming, Functional Programming, MVC Architecture, API, Scalable System Design",
+        "Concepts": "Object-Oriented Programming, Functional Programming, MVC Architecture, API, Scalable System Design, SOLID, TDD, Agile, DRY",
         "UI/Layout": "Adobe, Figma, Bootstrap, Tailwind, Responsive Design, SCSS/CSS",
         "Markup": "HTML, Markdown"
     },

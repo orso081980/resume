@@ -65,9 +65,9 @@
 
         <section id="summary" class="pb-6 pl-6 pr-6">
             <div class="w-[90%] mx-auto grid gap-6 items-center justify-items-center">
-                <div class="flex flex-col space-y-2">
+                <div class="flex flex-col space-y-1">
                     <h2 class="text-2xl font-bold pb-2 border-b">Summary</h2>
-                    <p>{{ summary.description }}</p>
+                    <p class="text-[16px]">{{ summary.description }}</p>
                     <p class="mt-4"><strong>Website -> </strong><a :href="summary.website" target="_blank"
                             rel="noopener noreferrer" class="text-[#4e2df3] hover:underline"> {{summary.website}}</a>
                         <strong class="pl-3">Portfolio -></strong> <a :href="summary.portfolio" target="_blank"
@@ -79,8 +79,8 @@
 
         <section id="skills" class="pb-6 pl-6 pr-6">
             <div class="w-[90%] mx-auto">
-                <h2 class="text-2xl font-bold border-b pb-2 mb-4">Skills</h2>
-                <ul class="list-disc pl-5 space-y-2">
+                <h2 class="text-2xl font-bold border-b pb-2 mb-2">Skills</h2>
+                <ul class="list-disc pl-5 space-y-1">
                     <li v-for="(value, key) in skills" :key="key">
                         <strong>{{ key }}:</strong> {{ value }}
                     </li>
@@ -90,8 +90,8 @@
 
         <section id="experience" class="bg-white pb-6 pl-6 pr-6">
             <div class="w-[90%] mx-auto">
-                <h2 class="text-2xl font-bold text-gray-900 border-b pb-2 mb-4">Work Experience</h2>
-                <div v-for="job in workExperience" :key="job.company" class="job space-y-2">
+                <h2 class="text-2xl font-bold text-gray-900 border-b pb-2 mb-2">Work Experience</h2>
+                <div v-for="job in workExperience" :key="job.company" class="job space-y-1">
                     <div class="flex justify-between items-center">
                         <h3 class="text-xl font-semibold text-gray-800">{{ job.role }} at {{ job.company }}</h3>
                         <div class="p-2 rounded h-20 flex items-center justify-center">
@@ -127,7 +127,7 @@
                             </strong>
                         </p>
                         <p class="text-sm text-gray-600">{{ edu.city }} {{ edu.country }} | {{ edu.time }}</p>
-                        <p v-if="edu.description" class="text-sm text-gray-600 mt-2">{{ edu.description }}</p>
+                        <!-- <p v-if="edu.description" class="text-sm text-gray-600 mt-2">{{ edu.description }}</p> -->
                     </div>
                 </div>
             </div>
@@ -136,7 +136,7 @@
         <section id="awards" class="bg-white pb-6 pl-6 pr-6">
             <div class="w-[90%] mx-auto">
                 <h2 class="text-2xl font-bold text-gray-900 border-b pb-2 mb-4">Awards & Certifications</h2>
-                <ul class="list-disc pl-5 space-y-2">
+                <ul class="list-disc pl-5 space-y-1">
                     <li v-for="award in awards" :key="award.title">
                         {{ award.title }}
                         <span v-if="award.issuer"> - {{ award.issuer }}</span>
@@ -149,7 +149,7 @@
         <section id="languages" class="bg-white pb-6 pl-6 pr-6">
             <div class="w-[90%] mx-auto">
                 <h2 class="text-2xl font-bold text-gray-900 border-b pb-2 mb-4">Languages</h2>
-                <ul class="list-disc pl-5 space-y-2">
+                <ul class="list-disc pl-5 space-y-1">
                     <li v-for="lang in languages" :key="lang.language">
                         <strong>{{ lang.language }}:</strong> {{ lang.proficiency }}
                     </li>
@@ -177,7 +177,7 @@
                             </p>
                         </div>
                     </div>
-                    <ul v-if="entry.activities && entry.activities.length" class="list-disc pl-5 space-y-2 mt-2">
+                    <ul v-if="entry.activities && entry.activities.length" class="list-disc pl-5 space-y-1 mt-2">
                         <li v-for="(activity, index) in entry.activities" :key="index">{{ activity }}</li>
                     </ul>
                 </div>

@@ -26,7 +26,7 @@ const path = require("path");
     console.log("Browser launched successfully");
 
     // Load the HTML file from the local HTTP server
-    const url = "http://127.0.0.1:8080/html/cv-merge.html";
+    const url = "http://127.0.0.1:8080/index.html";
     console.log(`Loading URL: ${url}`);
     await page.goto(url, { waitUntil: "networkidle0" });
     console.log("Page loaded successfully");
