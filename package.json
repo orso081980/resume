@@ -5,7 +5,8 @@
   "scripts": {
     "generate:pdf": "node generate-pdf.js",
     "generate:letter": "node generate-txt.js --file=presentation-letter.txt",
-    "generate:sonnet": "node generate-txt.js --file=presentation-sonnet.txt"
+    "generate:sonnet": "node generate-txt.js --file=presentation-sonnet.txt",
+    "generate:letter-pdf": "npx ts-node generate-letter.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +14,10 @@
   "description": "CV generator - Creates PDF and HTML versions from a template and JSON data",
   "dependencies": {
     "puppeteer": "^24.6.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0"
   }
 }
