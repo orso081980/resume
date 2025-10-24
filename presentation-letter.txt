@@ -13,7 +13,3 @@ Additionally, I’ve been integrating diverse systems via REST APIs to streamlin
 I’m interested in applying for the [job-position] position currently available at [job-company] and believe that my extensive experience in both back-end and front-end development, combined with my collaborative mindset and problem-solving skills, could potentially make me a good match for the role.
 
 Please feel free to contact me if you have any questions or require further information, I’d be happy to discuss how I can contribute to your team.
-
-Kind Regards,
-
-Marco

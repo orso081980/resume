@@ -15,7 +15,9 @@
                 "Facilitate clear communication with clients, stakeholders, and product owners to align development efforts with business goals.",
                 "Collaborate with designers to ensure UI/UX guidelines are effectively implemented in the application’s functionality.",
                 "Manage project budgets efficiently to maximize return on investment and resource allocation.",
-                "Establish and maintain rational project timelines to ensure on-time delivery and scope control."
+                "Establish and maintain rational project timelines to ensure on-time delivery and scope control.",
+                "Design and implement interactive dashboards and charts using Chart.js, vue-chartjs, and native JavaScript and also integrating map APIs like Mapbox or Google Maps to visualize geospatial data effectively.",
+                "Implement UI animations and transitions with Bootstrap, SVG, and Vue native functions to enhance user experience and interface fluidity."
             ],
             "tech_stack": {
                 "Stack": "LAMP, JAM, MEVN, MERN, HEADLESS",
@@ -46,7 +48,8 @@
                 "Skilled in designing and implementing RESTful APIs, ensuring efficient system communication and data exchange.",
                 "Experienced in customizing CMS platforms (WordPress, Drupal), CRMs systems for enhanced functionality (Hubpost, Microsoft Dynamics) and analytics tools (google analytics and matomo).",
                 "Proficient in SQL and NoSQL databases, including MongoDB and MySQL, enabling robust data handling and optimization.",
-                "Proficient in tools such as Jira, Monday and Slack for efficient task and project management."
+                "Proficient in tools such as Jira, Monday and Slack for efficient task and project management.",
+                "Develop responsive UI components with animated transitions using Bootstrap, SVG, and Vue native transition"
             ],
             "tech_stack": {
                 "Stack": "LAMP, JAM, MEVN",
@@ -285,8 +288,7 @@
             "country": "Canada",
             "period": "April 2015 – April 2017",
             "activities": [
-                "Volunteered as a mentor for multiple workshops, guiding participants through web development fundamentals (HTML, CSS, JavaScript, PHP, WordPress).",
-                "Assisted learners in building their first web projects, fostering an inclusive and supportive learning environment."
+                "Volunteered as a mentor for multiple workshops, guiding participants through web development fundamentals (HTML, CSS, JavaScript, PHP, WordPress)."
             ]
         }
     ]
