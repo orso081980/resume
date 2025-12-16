@@ -105,15 +105,15 @@ async function main(): Promise<void> {
     const page = await browser.newPage();
     await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
     
-    const pdfPath = path.resolve(__dirname, 'reference-letter.pdf');
+    const pdfPath = path.resolve(__dirname, 'presentation-letter.pdf');
     await page.pdf({
       path: pdfPath,
       format: 'A4',
       printBackground: true,
       margin: {
-        top: '20px',
+        top: '0px',
         right: '20px',
-        bottom: '20px',
+        bottom: '0px',
         left: '20px'
       }
     });
