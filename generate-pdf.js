@@ -8,7 +8,7 @@ const path = require("path");
   try {
     // Start HTTP server
     console.log("Starting HTTP server...");
-    serverProcess = spawn("http-server", [".", "-p", "8080"], {
+    serverProcess = spawn("http-server", [".", "-p", "8081"], {
       cwd: __dirname,
       stdio: "pipe",
     });
@@ -17,7 +17,7 @@ const path = require("path");
     await new Promise((resolve) => {
       setTimeout(resolve, 3000); // Wait 3 seconds for server to start
     });
-    console.log("HTTP server started on port 8080");
+    console.log("HTTP server started on port 8081");
 
     // Launch Puppeteer
     console.log("Launching browser...");
@@ -26,7 +26,7 @@ const path = require("path");
     console.log("Browser launched successfully");
 
     // Load the HTML file from the local HTTP server
-    const url = "http://127.0.0.1:8080/index.html";
+    const url = "http://127.0.0.1:8081/index.html";
     console.log(`Loading URL: ${url}`);
     await page.goto(url, { waitUntil: "networkidle0" });
     console.log("Page loaded successfully");
