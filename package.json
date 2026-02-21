@@ -13,7 +13,7 @@
   "license": "ISC",
   "description": "CV generator - Creates PDF and HTML versions from a template and JSON data",
   "dependencies": {
-    "puppeteer": "^24.6.1"
+    "puppeteer": "^24.36.1"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",

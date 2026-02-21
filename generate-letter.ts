@@ -108,7 +108,7 @@ async function main(): Promise<void> {
     const pdfPath = path.resolve(__dirname, 'presentation-letter.pdf');
     await page.pdf({
       path: pdfPath,
-      format: 'A4',
+      format: 'A3',
       printBackground: true,
       margin: {
         top: '0px',

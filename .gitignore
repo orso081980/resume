@@ -77,3 +77,7 @@ build/
 
 # PDF outputs (if you're generating PDFs)
 package-lock.json
+
+#folder
+
+/html/
