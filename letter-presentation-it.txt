@@ -1,0 +1,23 @@
+Gentile Responsabile delle Risorse Umane,
+
+Mi chiamo Marco Maffei e sono uno sviluppatore full-stack (con focus sul front-end) italiano di 45 anni, attualmente residente a Bruxelles, in Belgio.
+
+Dal 2016 lavoro nel settore web per diverse aziende, avendo costruito la mia carriera tra Canada, Italia e ora Belgio. La mia esperienza più significativa l’ho maturata tra il 2020 e il 2025 come lead developer nel dipartimento di digital marketing di Isabel Group, la principale società fintech del Belgio.
+
+In quel ruolo ho gestito l’intero ciclo di vita di numerose applicazioni web, dalla fase concettuale alla manutenzione continua, agli aggiornamenti e al coordinamento delle attività. Ho collaborato strettamente con webmasters, team DevOps, SecOps e designer per garantire elevati standard di performance, sicurezza e affidabilità.
+
+A seguito della suddivisione della società all’inizio del 2025, la mia collaborazione si è conclusa.
+
+Da allora ho proseguito lavorando con diversi clienti e progetti, approfondendo e ampliando le mie competenze su vari stack tecnologici.
+Solitamente opero su infrastrutture AWS o servizi serverless e le mie principali esperienze includono:
+
+Siti di marketing basati su CMS
+Applicazioni Node.js e framework JavaScript (SPA)
+Applicazioni PHP / Laravel
+Soluzioni Jamstack / Headless con integrazioni REST o SOAP API
+
+Sul fronte front-end lavoro con React, Vue e, più recentemente, Next.js e Nuxt.js (in configurazione full-stack). Sul back-end interagisco con database come MongoDB e MySQL utilizzando PHP o JavaScript.
+
+Dall’inizio di quest’anno sono alla ricerca di opportunità di collaborazione, sia con agenzie digitali, team prodotto o aziende che necessitano di una figura affidabile e competente. È per questo che sono particolarmente interessato alla posizione di [job-position] attualmente aperta presso [job-company]: il mio background, l’esperienza in ambienti aziendali strutturati, l’approccio collaborativo e la capacità di problem-solving potrebbero rappresentare un valido supporto per il vostro team.
+
+Sarei lieto di rispondere a qualsiasi domanda relativa alla mia candidatura e, nel frattempo, vi ringrazio per il tempo dedicato. (Batman)

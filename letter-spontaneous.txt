@@ -1,0 +1,19 @@
+Dear [job-company] Team,
+
+My name is Marco Maffei. I am a 45-year-old Italian full-stack developer (with a strong front-end focus) currently based in Brussels, Belgium.
+
+I have been working in web industry since 2016 for different companies and I've built my career between Canada, Italy and now Belgium. My most significant experience was gained between 2020 and 2025 as the lead developer in the digital marketing department at Isabel Group, Belgium’s leading fintech company.
+
+In that role I was responsible for the full lifecycle of many web applications from initial concept and ground-up development through to ongoing maintenance, enhancements, and task coordination. I worked closely with webmasters, DevOps, SecOps, and design teams to maintain high standards of performance, security, and reliability.
+
+Following organisational changes at Isabel in the beginning of 2025, our collaboration came to an end.
+
+Since then I have continued working with various clients and projects, which has allowed me to deepen and broaden my expertise across different technology stacks and experiment with new tools and approaches.
+
+I usually work with modern front-end JavaScript frameworks (React, Vue, and more recently Next.js & Nuxt.js in full-stack setups), templating engines, and custom solutions. I also regularly integrate internal and external systems via REST/SOAP APIs to streamline processes and improve data accessibility.
+
+From the beginning of this year I have been actively looking for collaboration opportunities, whether with digital agencies, product teams, or companies that need reliable external capacity. I am particularly interested in roles or partnerships where I can continue to grow technically, take on significant responsibility, and contribute meaningfully to high-quality products or user experiences.
+
+When I came across your website, I decided to reach out, as I believe my background could be a potential valuable addition to your team. I would be very happy to have a short conversation (call, video, or email) to learn more about your current and upcoming needs and explore whether there might be ways we could work together.
+
+Thank you very much for your time and I'm looking forward to the possibility of connecting with your team!

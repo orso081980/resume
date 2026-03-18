@@ -55,13 +55,13 @@ async function main(): Promise<void> {
     }
 
     // Read the presentation letter template
-    const letterTemplatePath = path.resolve(__dirname, 'presentation-letter.txt');
+    const letterTemplatePath = path.resolve(__dirname, 'letter-presentation.txt');
     let letterContent: string;
     
     try {
       letterContent = fs.readFileSync(letterTemplatePath, 'utf8');
     } catch (error) {
-      console.error('Error reading presentation-letter.txt:', error);
+      console.error('Error reading letter-presentation.txt:', error);
       process.exit(1);
     }
 

@@ -1,0 +1,28 @@
+Dear [job-company],
+
+My name is Marco Maffei. I am a 45-year-old Italian full-stack developer (with a front-end focus) currently based in Brussels, Belgium.
+
+I have been working in web industry since 2016 for different companies and I've built my career between Canada, Italy and now Belgium. My most significant experience was gained between 2020 and 2025 as the lead developer in the digital marketing department at Isabel Group, Belgium’s leading fintech company.
+
+In that role I was responsible for the full lifecycle of many web applications from initial concept and ground-up development through to ongoing maintenance, enhancements, and task coordination. I worked closely with webmasters, DevOps, SecOps, and design teams to maintain high standards of performance, security, and reliability.
+
+Following organisational changes at Isabel in the beginning of 2025, our collaboration came to an end.
+
+Since then I have continued working with various clients and projects, which has allowed me to deepen and broaden my expertise across different technology stacks and experiment with different technologies (Python) and approaches (AI driven development).
+
+I usually work with different infrastructures (or serverless services) and my main focus areas include:
+
+- CMS-driven marketing sites
+- Node.js & JavaScript frameworks (SPA)
+- PHP / Laravel applications
+- Jamstack / Headless solutions with REST or SOAP API integrations
+
+On the front-end side, I work extensively with modern JavaScript frameworks (React, Vue, and more recently Next.js & Nuxt.js in full-stack setups), templating engines, and custom solutions. On the back-end, I regularly work with databases such as MongoDB and MySQL.
+
+From the beginning of this year I have been actively looking for collaboration opportunities whether with digital agencies, product teams, or companies that need reliable external capacity.
+
+When I came across your website, I decided to reach out to explore possible collaboration. I’d be happy to provide support if your workload is heavy, or to help optimize modern infrastructure which could lead to potentially reducing costs or improving performance.
+
+I would be very pleased to have a short conversation to learn more about your current and upcoming needs and explore opportunities to work together.
+
+Thank you for your time — I look forward to hearing your feedback!

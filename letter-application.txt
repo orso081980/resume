@@ -1,0 +1,26 @@
+Dear [job-company],
+
+My name is Marco Maffei. I am a 45-year-old Italian full-stack developer (with a front-end focus) currently based in Brussels, Belgium.
+
+I have been working in the web industry since 2016 for different companies and I've built my career between Canada, Italy and now Belgium. My most significant experience was gained between 2020 and 2025 as the lead developer in the digital marketing department at Isabel Group, Belgium's leading fintech company.
+
+In that role I was responsible for the full lifecycle of many web applications from initial concept and ground-up development through to ongoing maintenance, enhancements, and task coordination. I worked closely with webmasters, DevOps, SecOps, and design teams to maintain high standards of performance, security, and reliability.
+
+Following organisational changes at Isabel in the beginning of 2025, our collaboration came to an end.
+
+Since then I have continued working with various clients and projects, which has allowed me to deepen and broaden my expertise across different technology stacks and experiment with different technologies (Python) and approaches (AI-driven development).
+
+I usually work with different infrastructures (or serverless services) and my main focus areas include:
+
+- CMS-driven marketing sites
+- Node.js & JavaScript frameworks (SPA)
+- PHP / Laravel applications
+- Jamstack / Headless solutions with REST or SOAP API integrations
+
+On the front-end side, I work extensively with modern JavaScript frameworks (React, Vue, and more recently Next.js & Nuxt.js in full-stack setups), templating engines, and custom solutions. On the back-end, I regularly work with databases such as MongoDB and MySQL.
+
+When I came across the opening for [job-position] at [job-company], I felt it was a strong match for my background and the direction I want to take my career. My experience in corporate environments, collaborative approach, and problem-solving mindset are qualities I believe would bring real value to your team.
+
+I would be very pleased to have a conversation to learn more about the role and explore how my experience could contribute to your projects.
+
+Thank you for your time — I look forward to hearing from you!
