@@ -98,7 +98,7 @@
                             <h3 class="text-xl font-semibold text-gray-800">{{ job.role }} at {{ job.company }}</h3>
                         </div>
                         <div class="p-2 rounded md:h-20 my-8 md:my-0 flex items-center justify-start w-full md:w-auto">
-                            <img :src="job.logo" :alt="job.company" class="w-80 md:w-40" />
+                            <img :src="job.logo" :alt="job.company" class="h-[60px] md:h-[40px]" />
                         </div>
                     </div>
                     <p class="text-sm text-gray-600">{{ job.city }}, {{ job.country }} — {{ job.time }}</p>
@@ -130,7 +130,7 @@
                                 <span v-else>{{ edu.school }}</span>
                             </strong>
                         </p>
-                        <p class="text-sm text-gray-600">{{ edu.city }} {{ edu.country }} | {{ edu.time }}</p>
+                        <p class="text-sm text-gray-600">{{ edu.city }} {{ edu.country }} {{ edu.time }}</p>
                         <!-- <p v-if="edu.description" class="text-sm text-gray-600 mt-2">{{ edu.description }}</p> -->
                     </div>
                 </div>
@@ -178,13 +178,10 @@
                                     }}</a>
                             </p>
                             <p class="text-sm text-gray-600">
-                                {{ entry.city }}, {{ entry.country }} | {{ entry.period }}
+                                {{ entry.city }}, {{ entry.country }} {{ entry.period }}
                             </p>
                         </div>
                     </div>
-                    <ul v-if="entry.activities && entry.activities.length" class="list-disc pl-5 space-y-1 mt-2">
-                        <li v-for="(activity, index) in entry.activities" :key="index">{{ activity }}</li>
-                    </ul>
                 </div>
             </div>
         </section>

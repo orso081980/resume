@@ -7,7 +7,7 @@
             "role": "Full Stack Developer & CEO",
             "company": "Tech Paw",
             "website": "https://www.tech-paw.com",
-            "logo": "https://techpawdev-gpcx6wyews.live-website.com/wp-content/themes/isabeltheme/assets/svgs/tech-paw-purple-2.svg",
+            "logo": "/images/paw.svg",
             "description": "Founded Tech Paw SRL in 2023 to deliver full stack development and strategic consulting services across Europe. Acting as both developer and technical advisor, independently building scalable Content Management System, Customer relationship management platforms, and web platforms tailored to client needs. Businesses advisor on infrastructure optimization, deployment automation, and cross-platform integration. Ensured delivery excellence by developing reusable components, creating technical documentation, and mentoring teams on implementation best practices.",
             "responsibilities": [
                 "Independently develop and deploy client-facing web apps using different platforms leveraging modern PHP, Javascript and Python frameworks, enhancing clients' web presence across multiple aspects including SEO, UX/UI design, performance, security, and modernization.",
@@ -30,7 +30,7 @@
                 "Tools": "Git/GitLab, Docker (basics), Jira, Monday.com",
                 "Design": "Figma, Adobe, Boostrap, Tailwind, Vite, Responsive Design, SCSS",
                 "Deployment": "Vercel, Render, Heroku, Railway",
-                "Platform": "Wordpress, Drupal, Hubspot, Nuxt Studio, Strapi.js, October CMS, DatoCMS, Django"
+                "Platform": "Wordpress, Drupal, HubSpot, Nuxt Studio, Strapi.js, October CMS, DatoCMS, Django"
             },
             "key_skills": "9 years as a full stack developer with experience in managing web departments and leading projects."
         },
@@ -41,7 +41,7 @@
             "role": "Full Stack Engineer",
             "company": "Isabel",
             "website": "https://www.isabelgroup.eu/",
-            "logo": "images/isabel.svg",
+            "logo": "/images/isabel.svg",
             "description": "Led web development projects supporting Isabel Group’s digital and marketing strategies. Collaborated closely with cross-functional teams including Designers, DevOps, SecOps, and Product Owners to ensure high-performance, secure, and user-centric solutions. Independently delivered scalable websites and applications integrated with Content Management Systems, Customer Relationship Management platforms, and third-party APIs. Oversaw deployments and content-rich platforms focused on financial and accounting services, consistently aligning with stakeholder goals and industry compliance standards.",
             "responsibilities": [
                 "Expert in PHP frameworks (Wordpress, Laravel), with strong proficiency in JavaScript libraries for front-end development (Vue and React as SPA).",
@@ -85,7 +85,7 @@
                 "JavaScript": "Vanilla, jQuery, React.js, Webpack.js, Grunt.js",
                 "Databases": "MySQL",
                 "Cloud": "AWS",
-                "CRM platform": "Hubspot, Mautic, Campus Login, Nova",
+                "CRM platform": "HubSpot, Mautic, Campus Login, Nova",
                 "Tools": "AWS, Agile, Smartsheet",
                 "Design": "Adobe, Boostrap, Responsive Design, SCSS"
             },
@@ -98,7 +98,7 @@
             "role": "Full Stack Developer",
             "company": "Oliver’s Learning (Oliver Solutions)",
             "website": "https://oliversolutions.com/",
-            "logo": "https://techpawdev-gpcx6wyews.live-website.com/wp-content/themes/isabeltheme/assets/svgs/oliver.svg",
+            "logo": "/images/oliver.svg",
             "description": "Full Stack Developer responsible for the development and maintenance of a multi-site learning platform at Oliver Solutions, a premier Canadian provider of regulator-approved education and exam preparation for financial professionals.",
             "responsibilities": [
                 "Maintaining and enhancing a multi-site web portal built on ExpressionEngine, ensuring consistent and seamless user experiences across multiple domains.",
@@ -124,7 +124,7 @@
             "role": "Full Stack Developer",
             "company": "Larche Digital",
             "website": "https://larche.com/",
-            "logo": "https://techpawdev-gpcx6wyews.live-website.com/wp-content/themes/isabeltheme/assets/svgs/larche.svg",
+            "logo": "/images/larche.svg",
             "description": "Independent Junior Web Developer for a digital agency in Barrie specializing in advertising, design, marketing, and web solutions, recognized for managing popular radio portals across Canada.",
             "responsibilities": [
                 "Coordinating website timing, setup, and launches in WordPress environments across various hosting types, including shared hosting, cloud, and VPS.",
@@ -202,8 +202,8 @@
         "phone-be": "+32471553623",
         "phone-it": "+393926449095",
         "website": "https://www.tech-paw.com/",
-        "logo": "https://techpawdev-gpcx6wyews.live-website.com/wp-content/themes/isabeltheme/assets/svgs/tech-paw-purple-2.svg",
-        "portfolio": "https://www.tech-paw.com/about-me/#projects",
+        "logo": "images/tech-paw-purple-2.svg",
+        "portfolio": "https://www.tech-paw.com/about-me/#portfolio",
         "e-cv": "https://www.tech-paw.com/about-me/#experience",
         "social": {
             "linkedin": "https://www.linkedin.com/in/marco-maffei-ninja-io/",
@@ -217,14 +217,14 @@
         "Stack": "LAMP, LEMP, JAM, MEVN, MERN, HEADLESS",
         "Back-end (PHP)": "Laravel, CodeIgniter",
         "Back-end (JS)": "Node.js, Express.js, Nuxt.js, Next.js",
-        "Front-end": "Vue.js, React.js, Angular.js, jQuery, Blade, Twig, Handlebars",
+        "Front-end": "Vue.js, React.js, jQuery, Blade, Twig",
         "Databases": "MySQL, MongoDB, PostgreSQL",
         "Web Servers": "Apache, Nginx",
-        "Content Management Systems": ", WordPress (Themes/Plugin/Core), Drupal, ExpressionEngine, DatoCMS, Strapi.js, October CMS, Django",
+        "Content Management Systems": "WordPress, Drupal, ExpressionEngine, Django, JAM, Headless CMS",
         "Customer Relationship Management platforms": "HubSpot (API/Admin), Mautic, Microsoft Dynamics 365",
-        "Cloud/DevOps": "AWS (EC2, S3, Lambda), GCP, Linux (Apache/Nginx), Git/GitLab, Shared Hosting, VPS, SSH, s(FTP)",
-        "Tools & APIs": "Webpack, Vite, Npm, Jira, Monday.com, Slack, Google Analytics, Matomo, REST, SOAP, JSON, XML, AJAX",
-        "Concepts": "Object-Oriented Programming, Functional Programming, MVC Architecture, API, Scalable System Design, SOLID, Agile, DRY",
+        "Cloud/DevOps": "AWS (EC2, S3, Lambda), Vercel, Cloudflare, Linux (Apache/Nginx), Git/GitLab, VPS, SSH, s(FTP)",
+        "Tools & APIs": "Webpack, Vite, Npm, Jira, Monday.com, Slack, Google Analytics, REST, SOAP, JSON, XML, AJAX",
+        "Concepts": "Object-Oriented Programming, Functional Programming, MVC Architecture, APIs, Scalable System Design, SOLID, DRY",
         "UI/Layout": "Adobe, Figma, Bootstrap, Tailwind, Responsive Design, SCSS/CSS",
         "Markup": "HTML, Markdown"
     },
@@ -233,14 +233,14 @@
             "institute": "adobe",
             "title": "Adobe InDesign Certificate",
             "issuer": "Adobe Training Toronto",
-            "date": "April 2018",
+            "date": "04-2018",
             "details": ""
         },
         {
             "institute": "georgian",
             "title": "Lassosoft Web Development Award",
             "issuer": "Georgian College",
-            "date": "April 2015",
+            "date": "04-2015",
             "details": ""
         },
         {
@@ -249,7 +249,7 @@
             "issuer": "British Council",
             "type": "Academic",
             "overall-score": 7.0,
-            "date": "Dec 2018",
+            "date": "12-2018",
             "details": ""
         }
     ],
@@ -279,10 +279,7 @@
             "logo": "https://www.canadalearningcode.ca/wp-content/uploads/clc-logo-1.svg",
             "city": "Barrie/Toronto, ON",
             "country": "Canada",
-            "period": "April 2015 – April 2017",
-            "activities": [
-                "Volunteered as a mentor for multiple workshops, guiding participants through web development fundamentals (HTML, CSS, JavaScript, PHP, WordPress)."
-            ]
+            "period": "04-2015 – 04-2017"
         }
     ]
 }
