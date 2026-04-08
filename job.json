@@ -7,7 +7,7 @@
             "role": "Full Stack Developer & CEO",
             "company": "Tech Paw",
             "website": "https://www.tech-paw.com",
-            "logo": "/images/paw.svg",
+            "logo": "images/paw.svg",
             "description": "Founded Tech Paw SRL in 2023 to deliver full stack development and strategic consulting services across Europe. Acting as both developer and technical advisor, independently building scalable Content Management System, Customer relationship management platforms, and web platforms tailored to client needs. Businesses advisor on infrastructure optimization, deployment automation, and cross-platform integration. Ensured delivery excellence by developing reusable components, creating technical documentation, and mentoring teams on implementation best practices.",
             "responsibilities": [
                 "Independently develop and deploy client-facing web apps using different platforms leveraging modern PHP, Javascript and Python frameworks, enhancing clients' web presence across multiple aspects including SEO, UX/UI design, performance, security, and modernization.",
@@ -41,7 +41,7 @@
             "role": "Full Stack Engineer",
             "company": "Isabel",
             "website": "https://www.isabelgroup.eu/",
-            "logo": "/images/isabel.svg",
+            "logo": "images/isabel.svg",
             "description": "Led web development projects supporting Isabel Group’s digital and marketing strategies. Collaborated closely with cross-functional teams including Designers, DevOps, SecOps, and Product Owners to ensure high-performance, secure, and user-centric solutions. Independently delivered scalable websites and applications integrated with Content Management Systems, Customer Relationship Management platforms, and third-party APIs. Oversaw deployments and content-rich platforms focused on financial and accounting services, consistently aligning with stakeholder goals and industry compliance standards.",
             "responsibilities": [
                 "Expert in PHP frameworks (Wordpress, Laravel), with strong proficiency in JavaScript libraries for front-end development (Vue and React as SPA).",
@@ -98,7 +98,7 @@
             "role": "Full Stack Developer",
             "company": "Oliver’s Learning (Oliver Solutions)",
             "website": "https://oliversolutions.com/",
-            "logo": "/images/oliver.svg",
+            "logo": "images/oliver.svg",
             "description": "Full Stack Developer responsible for the development and maintenance of a multi-site learning platform at Oliver Solutions, a premier Canadian provider of regulator-approved education and exam preparation for financial professionals.",
             "responsibilities": [
                 "Maintaining and enhancing a multi-site web portal built on ExpressionEngine, ensuring consistent and seamless user experiences across multiple domains.",
@@ -124,7 +124,7 @@
             "role": "Full Stack Developer",
             "company": "Larche Digital",
             "website": "https://larche.com/",
-            "logo": "/images/larche.svg",
+            "logo": "images/larche.svg",
             "description": "Independent Junior Web Developer for a digital agency in Barrie specializing in advertising, design, marketing, and web solutions, recognized for managing popular radio portals across Canada.",
             "responsibilities": [
                 "Coordinating website timing, setup, and launches in WordPress environments across various hosting types, including shared hosting, cloud, and VPS.",
