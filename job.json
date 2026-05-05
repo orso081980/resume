@@ -197,7 +197,7 @@
         "image": "images/profile.jpg",
         "email": "marco@tech-paw.com",
         "name": "Marco Maffei",
-        "job": "Senior Full-Stack Developer",
+        "job": "Full-Stack Developer (Front-end focused)",
         "address": "88 Avenue Albert, 1190 Forest, Bruxelles, Belgium 🇧🇪",
         "phone-be": "+32471553623",
         "phone-it": "+393926449095",
@@ -210,7 +210,7 @@
             "github": "https://github.com/orso081980",
             "twitter": "https://x.com/MarcoMaffei3"
         },
-        "description": "Experienced Full-Stack Developer (active since 2016) and Founder/CEO (Tech Paw, 2023) with a proven track record in building, maintaining, and scaling robust digital solutions driving business growth. Expertise spans PHP (Laravel, WordPress), JavaScript (Vue, React, Node.js, Nuxt.js), Python (Django, Flesk API), SQL/NoSQL databases (MySQL, MongoDB), and cloud platforms (AWS, GCP). Skilled in designing and implementing complex REST/SOAP APIs, integrating diverse Customer Relationship Management systems (HubSpot, Dynamics), and optimizing workflows using Git/GitLab, Jira, and Monday.com. Progressed from internal team member to trusted external consultant at Isabel Group, Belgium’s leading FinTech, over a 5-years collaboration. Passionate about architecting scalable, secure systems, leveraging data for informed decisions, and leading technical projects to successful completion, achieving measurable improvements in efficiency and user experience. Specialized in architecting scalable and secure systems, leading cross-functional technical projects, and leveraging data to drive measurable improvements in performance, efficiency, and user experience."
+        "description": "Experienced Full-Stack Developer (active since 2016) and Founder/CEO (Tech Paw, 2023) with a proven track record in building, maintaining, and scaling robust digital solutions driving business growth. Expertise spans PHP (Laravel, WordPress), JavaScript (Vue, React, Node.js, Nuxt.js), Python (Django, Flesk API), SQL/NoSQL databases (MySQL, MongoDB), and cloud platforms (AWS, Vercel, Cloudflare). Skilled in designing and implementing complex REST/SOAP APIs, integrating diverse Customer Relationship Management systems (HubSpot, Dynamics), and optimizing workflows using Git/GitLab, Jira, and Monday.com. Progressed from internal team member to trusted external consultant at Isabel Group, Belgium’s leading FinTech, over a 5-years collaboration. Passionate about architecting scalable, secure systems, leveraging data for informed decisions, and leading technical projects to successful completion, achieving measurable improvements in efficiency and user experience. Specialized in architecting scalable and secure systems, leading cross-functional technical projects, and leveraging data to drive measurable improvements in performance, efficiency, and user experience."
     },
     "skills": {
         "Programming Languages": "PHP, JavaScript, Python, Typescript",
@@ -220,7 +220,7 @@
         "Front-end": "Vue.js, React.js, jQuery, Blade, Twig",
         "Databases": "MySQL, MongoDB, PostgreSQL",
         "Web Servers": "Apache, Nginx",
-        "Content Management Systems": "WordPress, Drupal, ExpressionEngine, Django, JAM, Headless CMS",
+        "Content Management Systems": "WordPress, Drupal, ExpressionEngine, Django, JAM, Headless CMSs",
         "Customer Relationship Management platforms": "HubSpot (API/Admin), Mautic, Microsoft Dynamics 365",
         "Cloud/DevOps": "AWS (EC2, S3, Lambda), Vercel, Cloudflare, Linux (Apache/Nginx), Git/GitLab, VPS, SSH, s(FTP)",
         "Tools & APIs": "Webpack, Vite, Npm, Jira, Monday.com, Slack, Google Analytics, REST, SOAP, JSON, XML, AJAX",
