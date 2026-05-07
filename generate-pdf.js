@@ -1,5 +1,6 @@
 const puppeteer = require("puppeteer");
 const { spawn } = require("child_process");
+const http = require("http");
 const fs = require("fs").promises;
 const path = require("path");
 
@@ -13,9 +14,33 @@ const path = require("path");
       stdio: "pipe",
     });
 
-    // Wait for server to start
-    await new Promise((resolve) => {
-      setTimeout(resolve, 3000); // Wait 3 seconds for server to start
+    // Log server errors
+    serverProcess.stderr.on("data", (data) => {
+      console.error("Server error:", data.toString());
+    });
+
+    // Wait for server to be ready (poll instead of fixed delay)
+    console.log("Waiting for HTTP server to be ready...");
+    await new Promise((resolve, reject) => {
+      const maxAttempts = 20;
+      let attempts = 0;
+
+      const check = () => {
+        http
+          .get("http://127.0.0.1:8081", () => {
+            resolve();
+          })
+          .on("error", () => {
+            attempts++;
+            if (attempts >= maxAttempts) {
+              reject(new Error("HTTP server did not start in time"));
+            } else {
+              setTimeout(check, 300);
+            }
+          });
+      };
+
+      check();
     });
     console.log("HTTP server started on port 8081");
 
@@ -28,7 +53,7 @@ const path = require("path");
     // Load the HTML file from the local HTTP server
     const url = "http://127.0.0.1:8081/index.html";
     console.log(`Loading URL: ${url}`);
-    await page.goto(url, { waitUntil: "networkidle0" });
+    await page.goto(url, { waitUntil: "networkidle2", timeout: 5000 });
     console.log("Page loaded successfully");
 
     // Define the path for output PDF
@@ -57,7 +82,6 @@ const path = require("path");
     }
   } catch (error) {
     console.error("Error generating PDF:", error);
-    // Make sure to stop the server if there's an error
     if (serverProcess) {
       serverProcess.kill();
     }
