@@ -20,4 +20,4 @@ Sul fronte front-end lavoro con React, Vue e, più recentemente, Next.js e Nuxt.
 
 Dall’inizio di quest’anno sono alla ricerca di opportunità di collaborazione, sia con agenzie digitali, team prodotto o aziende che necessitano di una figura affidabile e competente. È per questo che sono particolarmente interessato alla posizione di [job-position] attualmente aperta presso [job-company]: il mio background, l’esperienza in ambienti aziendali strutturati, l’approccio collaborativo e la capacità di problem-solving potrebbero rappresentare un valido supporto per il vostro team.
 
-Sarei lieto di rispondere a qualsiasi domanda relativa alla mia candidatura e, nel frattempo, vi ringrazio per il tempo dedicato. (Batman)
+Sarei lieto di rispondere a qualsiasi domanda relativa alla mia candidatura e, nel frattempo, vi ringrazio per il tempo dedicato.
