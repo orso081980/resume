@@ -103,7 +103,7 @@ async function main(): Promise<void> {
     });
     
     const page = await browser.newPage();
-    await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
+    await page.setContent(htmlContent, { waitUntil: 'load' });
     
     const pdfPath = path.resolve(__dirname, 'presentation-letter.pdf');
     await page.pdf({

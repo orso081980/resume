@@ -1,19 +1,21 @@
 Dear [job-company] Team,
 
-My name is Marco Maffei. I am a 45-year-old Italian full-stack developer (with a strong front-end focus) currently based in Brussels, Belgium.
+My name is Marco Maffei, and I am an Italian full-stack developer with a strong front-end focus, currently based in Brussels, Belgium.
 
-I have been working in web industry since 2016 for different companies and I've built my career between Canada, Italy and now Belgium. My most significant experience was gained between 2020 and 2025 as the lead developer in the digital marketing department at Isabel Group, Belgium’s leading fintech company.
+I have been working in the web industry since 2016, building my career across Canada, Italy, and Belgium. My most significant experience was gained between 2020 and 2025 as Lead Developer within the Digital Marketing department at Isabel Group, Belgium's leading fintech company.
 
-In that role I was responsible for the full lifecycle of many web applications from initial concept and ground-up development through to ongoing maintenance, enhancements, and task coordination. I worked closely with webmasters, DevOps, SecOps, and design teams to maintain high standards of performance, security, and reliability.
+In that role, I was responsible for the complete lifecycle of numerous web applications—from the initial concept and architecture through development, deployment, maintenance, and continuous improvements. I worked closely with webmasters, DevOps, SecOps, designers, and other stakeholders to deliver secure, scalable, and high-performing digital solutions.
 
-Following organisational changes at Isabel in the beginning of 2025, our collaboration came to an end.
+Following organisational changes at Isabel at the beginning of 2025, our collaboration came to an end.
 
-Since then I have continued working with various clients and projects, which has allowed me to deepen and broaden my expertise across different technology stacks and experiment with new tools and approaches.
+Since then, I have continued working with a variety of clients and projects, allowing me to broaden my technical expertise while exploring modern technologies, architectures, and development methodologies.
 
-I usually work with modern front-end JavaScript frameworks (React, Vue, and more recently Next.js & Nuxt.js in full-stack setups), templating engines, and custom solutions. I also regularly integrate internal and external systems via REST/SOAP APIs to streamline processes and improve data accessibility.
+My primary expertise lies in modern JavaScript development using frameworks such as React, Vue, and, more recently, Next.js and Nuxt.js in full-stack environments. Alongside these, I have extensive experience building multilingual websites, customer platforms, and custom business applications, as well as integrating internal and external services through REST and SOAP APIs.
 
-From the beginning of this year I have been actively looking for collaboration opportunities, whether with digital agencies, product teams, or companies that need reliable external capacity. I am particularly interested in roles or partnerships where I can continue to grow technically, take on significant responsibility, and contribute meaningfully to high-quality products or user experiences.
+I also continuously adopt modern software engineering practices and AI-assisted development workflows. I regularly work with tools such as Claude Code, AI coding agents, and AI APIs to accelerate development, automate repetitive tasks, improve testing and refactoring, and prototype new features more efficiently. Combined with a strong focus on clean architecture, MVC principles, API-first design, and maintainable code, these tools enable me to deliver robust, scalable solutions while shortening development cycles without compromising quality.
 
-When I came across your website, I decided to reach out, as I believe my background could be a potential valuable addition to your team. I would be very happy to have a short conversation (call, video, or email) to learn more about your current and upcoming needs and explore whether there might be ways we could work together.
+From the beginning of this year, I have been actively looking for new collaboration opportunities with digital agencies, product teams, and innovative companies seeking experienced external development capacity. I particularly enjoy projects where I can contribute not only through implementation but also by helping shape technical decisions, improving development workflows, and building products designed for long-term growth.
 
-Thank you very much for your time and I'm looking forward to the possibility of connecting with your team!
+I would be delighted to arrange a short call, video meeting, or simply continue the conversation by email to learn more about your current or upcoming projects and explore whether my experience could be a valuable addition to your team.
+
+Thank you very much for your time and consideration. I look forward to hearing from you.
